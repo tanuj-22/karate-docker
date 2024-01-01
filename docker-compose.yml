@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  mymvn:
+    image: mymaven
+    volumes:
+      - maven-repo:/mavenuser/.m2
+      - ./target:/usr/src/mymaven/target
+
+volumes:
+  maven-repo:
